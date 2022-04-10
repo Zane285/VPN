@@ -13,7 +13,7 @@ while True:
         if "openvpn.exe" not in (p.name() for p in psutil.process_iter()):
             try:
                 print("initializing vpn")
-                cmd = 'start /b cmd /c "C:\\Program Files\\OpenVPN\\bin\\openvpn-gui.exe" --connect cVPN-us-newyork01-tcp443.ovpn'
+                cmd = 'start /b cmd /c "C:\\Program Files\\OpenVPN\\bin\\openvpn-gui.exe" --connect VpnNameHere.ovpn'
                 os.system(cmd)
             except Exception as e:
                 print(e)
