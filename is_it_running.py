@@ -1,6 +1,5 @@
 from logging import exception
-import psutil, tqdm, os
-from time import sleep
+import psutil, os
 print("Looking For Processes")
 while True:
     if "openvpn.exe" in (p.name() for p in psutil.process_iter()):
