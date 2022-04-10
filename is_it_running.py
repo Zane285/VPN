@@ -1,6 +1,7 @@
 from logging import exception
 import psutil, tqdm, os
 from time import sleep
+print("Looking For Processes")
 while True:
     if "openvpn.exe" in (p.name() for p in psutil.process_iter()):
         if "FortniteClient-Win64-Shipping.exe" in (p.name() for p in psutil.process_iter()):
