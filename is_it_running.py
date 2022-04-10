@@ -1,4 +1,3 @@
-from logging import exception
 import psutil, os
 print("Looking For Processes")
 while True:
